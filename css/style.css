@@ -1,12 +1,25 @@
-body{
-    font-family: 'Alexandria', sans-serif;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-h2 {
+body{
+  font-family: 'Alexandria', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* h2 {
     font-weight: 600;
     font-size: 24px;
     line-height: 100%;
     letter-spacing: 0;
-  }
+  } */
 .lead-box{
     color: #595959;
     font-weight: 400;
@@ -190,3 +203,191 @@ h2 {
       font-size: 12px;
     }
   }
+
+  .accreditation-section {
+    background-color: #0043A4;
+    margin-top: 140px;
+    margin-bottom: 100px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .accreditation-section .accreditation-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .accreditation-heading {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.3;
+    color: #FCFCFC;
+  }
+  
+  .accreditation-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #F0F0F0;
+  }
+  
+  @media (max-width: 992px) {
+    .accreditation-heading {
+      font-size: 24px;
+    }
+  
+    .accreditation-text {
+      font-size: 16px;
+    }
+  }  
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .accreditation-section .btn {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .accreditation-section .btn {
+      display: none !important;
+    }
+  }
+  .curved-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 100%;
+    background-color: #0043A4;
+    transform: skewY(-3deg);
+    transform-origin: top left;
+    z-index: -1;
+  }
+  
+  /* accreditation-section */
+  .custom-program-section {
+    color: #003087;
+  }
+  .custom-program-section .section-title {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .icon-circle {
+    background-color: #003087;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-circle img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }  
+
+  /* mba-section */
+  .mba-section {
+    background-color: #E8ECF4;
+  }
+  .mba-section .section-title{
+    font-weight: 400;
+    font-size: 44px;
+  }
+  @media (max-width: 768px) {
+    .mba-section .section-title{
+      font-size: 24px;
+    }
+  }
+  @media (max-width: 992px) {
+    .mba-section .section-title{
+      font-size: 30px;
+    }
+  }
+  .mba-section .section-text{
+    font-weight: 400;
+    font-size: 18px;
+    color: #454545;
+  }
+  @media (max-width: 768px) {
+    .mba-section .section-text{
+      font-size: 16px;
+    }
+  }
+  @media (min-width: 992px) {
+    .mba-section .list-section{
+      margin-top: -170px;
+    }
+  }
+  .mba-section .list li{
+    font-weight: 400;
+    font-size: 14px;
+    color: #454545;
+    line-height: 34px;
+  }
+  @media (max-width: 768px) {
+    .mba-section .list li{
+      font-size: 16px;
+    }
+  }
+  .image-grid-custom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    height: 100%;
+  }
+  
+  .left-column, .right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .left-column .image-box {
+    flex: 1;
+  }
+  
+  .right-column .image-box {
+    flex: 1;
+  }
+  
+  .image-box {
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    height: 100%;
+    min-height: 218px;
+    text-shadow: 0 0 5px rgba(0,0,0,0.6);
+  }
+  @media (max-width: 767px) {
+    .image-grid-custom {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .left-column,
+    .right-column {
+      width: 95%;
+    }
+  
+    .image-box {
+      width: 95%;
+    }
+  }
+  
