@@ -206,11 +206,16 @@ ul{
 
   .accreditation-section {
     background-color: #0043A4;
-    margin-top: 140px;
+    margin-top: 120px;
     margin-bottom: 100px;
     overflow: hidden;
     position: relative;
     z-index: 1;
+  }
+  @media (max-width: 768px) {
+    .accreditation-section {
+       margin-top: 220px;
+    }
   }
   
   .accreditation-section .accreditation-logo {
