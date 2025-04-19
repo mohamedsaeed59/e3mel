@@ -21,7 +21,7 @@
           <div class="container py-5">
             <div class="row align-items-center">
                 <!-- text-->
-                <div class="col-lg-6 text-white text-center text-lg-start mb-4 mb-lg-0 order-0 order-lg-1">
+                <div class="header-text col-lg-6 text-white text-center order-0 order-lg-1">
                     <div class="custom-badge-wrapper mb-3">
                         <img src="/images/Shape.png" alt="MBA Badge Background" class="badge-bg-img" />
                         <div class="badge-text">
@@ -30,8 +30,10 @@
                         </div>
                       </div>
                   
-                    <h2 class="move-up">احصل على شهادة ماجستير معتمدة بخصم 20٪ الآن!</h2>
-                    <p class="mb-4 mx-3 text-center chance-title">
+                    <div class="certificated-section">
+                      <h2 class="move-up">احصل على شهادة ماجستير معتمدة بخصم 20٪ الآن!</h2>
+                      <p class="chance-title">
+                    </div>
                       فرصة للتميز المهني وتطوير المهارات بأسعار ميسرة وبرامج مرنة
                     </p>
                     <div class="stats-container d-flex justify-content-center justify-content-lg-center gap-4 flex-wrap mx-3">
@@ -53,58 +55,65 @@
                           </div>
                           <p class="stat-label mb-0 mt-2">شهادات معتمدة</p>
                         </div>
-                      </div>                      
-                      
+                      </div>                        
                   </div>
                 <!-- form-->
-                <div class="col-lg-6 order-1 order-lg-0">
-                    <div class="card shadow-sm" style="max-width: 550px; margin: auto;">
-                        <h2 class="fw-bold mb-2" style="font-size: 24px; line-height: 100%; letter-spacing: 0px;">
-                          سجل الآن و احصل علي
-                          <span class="text-success">شهادة معتمدة</span>
-                        </h2>
-                        <p class="mb-4" style="font-size: 18px; line-height: 25px; letter-spacing: -0.1px; color: #595959;">
-                          انضم إلى آلاف الأشخاص الذين طوروا مهاراتهم وحصلوا على شهادات معتمدة تعزز فرصهم الوظيفية. سجل الآن وابدأ رحلتك نحو النجاح!
-                        </p>           
-                        <form dir="rtl">
-                            <div class="mb-3">
-                              <label class="form-label" for="name" style="font-size: 16px;">الاسم</label>
-                              <input
-                                id="name"
-                                type="text"
-                                class="form-control"
-                                placeholder="اكتب اسمك"
-                                required
-                                style="font-size: 13px; color: #667085; text-align: right;" />
-                            </div>
-                          
-                            <div class="mb-3">
-                              <label class="form-label" for="phone">رقم الهاتف</label>
-                              <input
-                                id="phone"
-                                type="tel"
-                                class="form-control"
-                                placeholder="+05 (555) 000-0000"
-                                required
-                                style="font-size: 13px; color: #667085; text-align: right;" />
-                            </div>
-                          
-                            <div class="mb-3">
-                              <label class="form-label" for="email">البريد الإلكتروني</label>
-                              <input
-                                id="email"
-                                type="email"
-                                class="form-control"
-                                placeholder="ex@example.com"
-                                required
-                                style="font-size: 13px; color: #667085; text-align: right;" />
-                            </div>
-                          
-                            <button type="submit" class="btn btn-success w-100 fw-bold">
-                              سجّل الآن وابدأ رحلتك!
-                            </button>
-                          </form>
+                <div class="header-form col-lg-6 order-1 order-lg-0">
+                  <div class="custom-form-card card shadow-sm">
+                    <h2 class="form-title">
+                      سجل الآن و احصل علي
+                      <span class="text-success">شهادة معتمدة</span>
+                    </h2>
+                
+                    <p class="form-description">
+                      انضم إلى آلاف الأشخاص الذين طوروا مهاراتهم وحصلوا على شهادات معتمدة تعزز فرصهم الوظيفية. سجل الآن وابدأ رحلتك نحو النجاح!
+                    </p>
+                
+                    <form>
+                      <div class="mb-3">
+                        <label class="form-label input-label" for="name">الاسم</label>
+                        <input
+                          id="name"
+                          type="text"
+                          class="form-control custom-input"
+                          placeholder="اكتب اسمك"
+                          required />
                       </div>
+                
+                      <div class="mb-3">
+                        <label class="form-label input-label" for="phone">
+                          رقم الهاتف <span class="text-danger">*</span>
+                        </label>
+                        <div class="custom-phone-wrapper">
+                          <select class="form-select country-code-select">
+                            <option value="+966">+966</option>
+                            <option value="+20">+20</option>
+                            <option value="+971">+971</option>
+                          </select>
+                          <input
+                            id="phone"
+                            type="tel"
+                            class="form-control phone-number-input"
+                            placeholder="(555) 000-0000"
+                            required />
+                        </div>
+                      </div>                                         
+                
+                      <div class="mb-3">
+                        <label class="form-label input-label" for="email">البريد الإلكتروني</label>
+                        <input
+                          id="email"
+                          type="email"
+                          class="form-control custom-input"
+                          placeholder="ex@example.com"
+                          required />
+                      </div>
+                
+                      <button type="submit" class="btn custom-btn-color w-100">
+                        سجّل الآن وابدأ رحلتك!
+                      </button>
+                    </form>
+                  </div>
                 </div>
               </div>
           </div>
@@ -114,7 +123,7 @@
     <!-- Accreditations Section -->
     <section class="accreditation-section text-white py-5 mt-6 position-relative">
       <!-- Background Shape -->
-      <div class="curved-bg"></div>
+      <!-- <div class="curved-bg"></div> -->
       <div class="container position-relative z-1">
         <div class="row align-items-center">
           <!-- Text and Button -->
@@ -123,7 +132,7 @@
             <p class="accreditation-text mb-4">
               تُعد التوصيات والإعتمادات عاملين رئيسيين في بناء ثقة المتعلمين وضمان جودة أي برنامج تعليمي. تُعتمد الشهادة من هيئات تعليمية دولية ومحلية، وتفوق البرنامج مع معايير التعليم والتدريب المهني، وإمكانية استخدام الشهادة في الترقية أو التقديم على وظائف جديدة.
             </p>
-            <a href="#!" class="btn btn-success d-none d-md-inline-block">احجز مكانك معنا!</a>
+            <a href="#!" class="btn custom-btn-color d-none d-md-inline-block">احجز مكانك معنا!</a>
           </div>
           <div class="col-lg-2 text-center text-lg-start"></div>
           <!-- Logos -->
@@ -189,7 +198,7 @@
               <li class="mb-4">احصل على شهادة الماجستير المهني في إدارة الأعمال MBA المعتمدة من جامعة مارا التكنولوجية.</li>
               <li>احصل على شهادة الماجستير المهني في إدارة الأعمال MBA المعتمدة من جامعة مارا التكنولوجية.</li>
             </ul>
-            <a href="#" class="btn btn-success px-4 py-2">سجل الآن وابدأ رحلتك!</a>
+            <a href="#" class="btn custom-btn-color px-4 py-2">سجل الآن وابدأ رحلتك!</a>
           </div>
           <div class="col-lg-6 mb-4 mb-lg-0 order-0 order-lg-1">
             <div class="image-grid-custom"> 
