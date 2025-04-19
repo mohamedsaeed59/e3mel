@@ -346,75 +346,75 @@ ul{
 }
 
  /* accreditation section */
+.accreditation-section {
+  background-color: #0043A4;
+  margin-top: 120px;
+  margin-bottom: 100px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 992px) {
   .accreditation-section {
-    background-color: #0043A4;
-    margin-top: 120px;
-    margin-bottom: 100px;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
+      margin-top: 370px;
   }
-  @media (max-width: 992px) {
-    .accreditation-section {
-       margin-top: 370px;
-    }
-  }
-  
-  .accreditation-section .accreditation-logo {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    background: white;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-  
+}
+
+.accreditation-section .accreditation-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.accreditation-heading {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.3;
+  color: #FCFCFC;
+}
+
+.accreditation-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #F0F0F0;
+}
+@media (max-width: 992px) {
   .accreditation-heading {
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 1.3;
-    color: #FCFCFC;
+    font-size: 24px;
   }
-  
+
   .accreditation-text {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.8;
-    color: #F0F0F0;
+    font-size: 16px;
   }
-  @media (max-width: 992px) {
-    .accreditation-heading {
-      font-size: 24px;
-    }
-  
-    .accreditation-text {
-      font-size: 16px;
-    }
-  }  
-  
-  @media (min-width: 768px) and (max-width: 991px) {
-    .accreditation-section .btn {
-      margin-bottom: 20px;
-    }
+}  
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .accreditation-section .btn {
+    margin-bottom: 20px;
   }
-  
-  @media (max-width: 767px) {
-    .accreditation-section .btn {
-      display: none !important;
-    }
+}
+
+@media (max-width: 767px) {
+  .accreditation-section .btn {
+    display: none !important;
   }
-  .curved-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 150%;
-    height: 100%;
-    background-color: #0043A4;
-    transform: skewY(-3deg);
-    transform-origin: top left;
-    z-index: -1;
-  }
+}
+.curved-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 100%;
+  background-color: #0043A4;
+  transform: skewY(-3deg);
+  transform-origin: top left;
+  z-index: -1;
+}
   
   /* accreditation-section */
   .custom-program-section {
