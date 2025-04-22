@@ -126,7 +126,7 @@ ul{
 
 @media (max-width: 767px) {
   .header .certificated-section{
-    margin-top: -125px;
+    margin-top: -110px;
   }
   .header .move-up {
     font-size: 24px;
@@ -170,12 +170,13 @@ ul{
 .badge-text .underline {
   width: 150px;
   height: 2px;
-  background-color: white;
+  background-color: #BFBFBF;
   margin: 10px auto 0 auto;
 }
 @media (max-width: 991px) {
   .badge-text .underline {
     width: 80px;
+    height: 1px;
   }
 }
 .header .badge-title {
