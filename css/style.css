@@ -46,7 +46,7 @@ ul{
     background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d');
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
+    height: 100vh;
 }
 .header .overlay {
     background-color: rgba(0, 0, 0, 0.6);
@@ -55,6 +55,14 @@ ul{
     flex-direction: column;
     justify-content: center;
 }
+@media (max-width: 991px) {
+  .header {
+    height: 60vh;
+  }
+  .header .overlay {
+    height: 60vh;
+  }
+} 
 .header .logo-wrapper {
   display: flex;
   justify-content: center;
@@ -82,14 +90,20 @@ ul{
 .header .header-form{
   margin-bottom: -60px;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .header .header-text{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 220px;
+    margin-bottom: -200px;
+  }
+} 
+@media (max-width: 767px) {
+  .header .header-text{
+    margin-top: 140px;
+    margin-bottom: -200px;
   }
 } 
 .header .certificated-section{
-  margin-top: -140px;
+  margin-top: -235px;
 }
 .header .move-up {
   font-weight: 600;
@@ -103,9 +117,16 @@ ul{
   font-size: 18px;
   color: #F5F5F5;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 991px) {
+  .header .certificated-section {
+    margin-top: -150px;
+  }
+}
+
+@media (max-width: 767px) {
   .header .certificated-section{
-    margin-top: -90px;
+    margin-top: -125px;
   }
   .header .move-up {
     font-size: 24px;
@@ -124,8 +145,8 @@ ul{
 
 .header .custom-badge-wrapper {
   position: relative;
-  width: 529px;
-  height: 351px;
+  width: 629px;
+  height: 451px;
   max-width: 100%;
   margin-top: 120px;
   z-index: 1;
@@ -136,14 +157,26 @@ ul{
   object-fit: contain;
   box-shadow: 8px 2px 10px 0px rgba(255, 255, 255, 0.25);
 }
-.header .badge-text {
+.badge-text {
   position: absolute;
-  top: 35%;
+  top: 28%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
   width: 100%;
+}
+
+.badge-text .underline {
+  width: 150px;
+  height: 2px;
+  background-color: white;
+  margin: 10px auto 0 auto;
+}
+@media (max-width: 991px) {
+  .badge-text .underline {
+    width: 80px;
+  }
 }
 .header .badge-title {
   font-weight: 700;
@@ -214,11 +247,11 @@ ul{
 }
 @media (max-width: 768px) {
   .header .stat-number-wrapper {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
   }
   .header .stat-number {
-    font-size: 18px;
+    font-size: 12px;
   }
   .header .stat-label {
     font-size: 12px;
@@ -229,22 +262,20 @@ ul{
  .header .custom-form-card {
   background-color: white;
   border: none;
-  padding: 4rem;
-  max-width: 550px;
+  padding: 6rem 4rem;
+  max-width: 520px;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .header .form-title {
-  font-size: 24px;
-  line-height: 100%;
-  letter-spacing: 0;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 0.8rem;
 }
 .header .form-description {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 25px;
   letter-spacing: -0.1px;
@@ -261,6 +292,7 @@ ul{
   background-color: #FFFFFF;
   box-shadow: 0px 0.85px 1.7px 0px #1018280D;
   font-weight: 400;
+  font-family: 'Inter';
   font-size: 13.72px;
   line-height: 22.86px;
   letter-spacing: 0;
@@ -321,10 +353,15 @@ ul{
   box-shadow: none;
 }
 
-
-@media (max-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .header .custom-form-card {
     padding: 4rem;
+  }
+}
+@media (max-width: 991px) {
+  .header .custom-form-card {
+    padding: 4rem;
+    margin-top: 210px;
   }
 }
 @media (max-width: 768px) {
@@ -345,7 +382,29 @@ ul{
     font-size: 12px;
   }
 }
-
+.header .register-hero-btn {
+  background-color: #029843;
+  border: 1px solid #029843;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2px 18px;
+  height: 50px;
+  width: 360px;
+  margin: 0 auto;
+  border-radius: 6px;
+  filter: drop-shadow(0px 1px 4px rgba(25, 33, 61, 0.08));
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  white-space: nowrap;
+}
+@media (max-width: 991px) {
+  .header .register-hero-btn {
+    width: 260px;
+    height: 40px;
+  }
+}
  /* accreditation section */
 .accreditation-section {
   background-color: #0043A4;
@@ -355,12 +414,16 @@ ul{
   position: relative;
   z-index: 1;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .accreditation-section {
-      margin-top: 370px;
+      margin-top: 580px;
   }
 }
-
+@media (max-width: 767px) {
+  .accreditation-section {
+      margin-top: 500px;
+  }
+}
 .accreditation-section .accreditation-logo {
   width: 100px;
   height: 100px;
