@@ -803,12 +803,11 @@ ul{
   transform: translateX(-50%);
   width: 200%;
   height: 160px;
-  background-color: #f7f7f7; /* لون الخلفية */
+  background-color: #f7f7f7;
   border-radius: 0 0 50% 50%;
   z-index: 1;
 }
 
-/* الكيرف السفلي */
 .why-us-section::after {
   content: "";
   position: absolute;
@@ -821,15 +820,11 @@ ul{
   border-radius: 50% 50% 0 0;
   z-index: 1;
 }
-
-/* المحتوى فوق */
 .why-us-section .content {
   position: relative;
   z-index: 2;
   padding: 60px 0px;
 }
-
-
 .why-us-section .custom-card {
   width: 100%;
   height: 100%;
@@ -1091,15 +1086,6 @@ ul{
 }
 
 .payment-text .payment-btn {
-  /* display: inline-block;
-  background-color: #002f6c;
-  color: white;
-  padding: 12px 24px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-  box-shadow: 0px 1px 4px 0px #19213D14; */
   background-color: #002f6c;
   border: 1px solid #002f6c;
   color: white;
@@ -1198,20 +1184,6 @@ ul{
   }
 }
 
-/* .payment-icons img {
-  width: 135px;
-  height: 172px;
-  border-radius: 20.7px;
-  border: 6.9px solid #ffffff;
-  padding: 10px;
-  background: white;
-  object-fit: contain;
-  box-shadow:
-    0px 1.73px 3.45px 0px #6C718014,
-    0px 6.04px 6.04px 0px #6C718012,
-    0px 14.66px 8.63px 0px #6C71800A,
-    0px 25.01px 10.35px 0px #6C718003;
-} */
 .payment-icons img:nth-child(1) {
   transform: rotate(10deg);
   margin-left: -10px;
